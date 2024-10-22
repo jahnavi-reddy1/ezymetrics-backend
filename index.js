@@ -53,7 +53,7 @@ app.get('/api/crm-data', async (req, res) => {
 // Test Email Route
 app.get('/api/test-email', async (req, res) => {
   try {
-    await sendEmail('jahnavisai1234@gmail.com', 'Test Email', 'This is a test email.');
+    await sendEmail('your_email@gmail.com', 'Test Email', 'This is a test email.');
     res.send('Test email sent.');
   } catch (error) {
     console.error('Error sending test email:', error.message);
