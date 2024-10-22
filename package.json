@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "start": "node index.js",           
+    "client": "cd frontend-ezy && set PORT=3001 && npm start", 
+    "dev": "concurrently \"npm run start\" \"npm run client\"", 
+    "build": "echo 'No build step for backend'" 
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "fast-csv": "^5.0.1",
+    "json2csv": "^6.0.0-alpha.2",
+    "mongoose": "^8.7.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.15",
+    "pdfkit": "^0.15.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
